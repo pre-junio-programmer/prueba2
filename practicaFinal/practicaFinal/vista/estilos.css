@@ -1,0 +1,225 @@
+.textoGraduado {
+    background: #121FCF;
+    background: linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    /*Propiedades de Mozilla para compatibilidad */
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+
+svg {
+	font-family: "Lemon", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {
+        fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); 
+    }
+	80%  {
+        fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; 
+    }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {
+    background-color: #FFFFFF;
+}
+
+.testbutton {
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #000000 !important;
+    font-size: 18px;
+    text-shadow: 3px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 3px solid #3866A3;
+    background: #EEAF00;
+    background: linear-gradient(to top, #EEAF00, #C8CF00);
+    margin: 30px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center; .textoGraduado {
+        background: #121FCF;
+        background: linear-gradient(to top, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    
+        /*Propiedades de Mozilla para compatibilidad */
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+    
+    @import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+    
+    svg {
+        font-family: "Lemon", sans-serif;
+        width: 100%; height: 100%;
+    }
+    svg text {
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #365FA0;
+        font-size: 100px;
+    }
+    @keyframes stroke {
+        0%   {
+            fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+            stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        }
+        70%  {
+            fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); 
+        }
+        80%  {
+            fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; 
+        }
+        100% {
+            fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+            stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        }
+    }
+    
+    .wrapper {
+        background-color: #FFFFFF;
+    }
+    
+    .testbutton {
+        font-family: 'Comic Sans MS', sans-serif;
+        color: #000000 !important;
+        font-size: 18px;
+        text-shadow: 3px 1px 0px #7CACDE;
+        box-shadow: 1px 1px 1px #BEE2F9;
+        padding: 10px 25px;
+        border-radius: 40px;
+        border: 3px solid #3866A3;
+        background: #EEAF00;
+        background: linear-gradient(to top, #EEAF00, #C8CF00);
+        margin: 30px;
+    }
+    
+    .centrar{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 30px; 
+    }
+      
+    .custom_input {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .input {
+        font-size: 23px;
+        padding: 5px 10px;
+        width: 100%;
+        outline: none;
+        background: #FFFFFF;
+        color: #000000;
+        border: 1px solid #C4D1EB;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px 0px #E2E2E2;
+        transition: .3s ease;
+    }
+    
+    .input:focus {
+        background: #F2F2F2;
+        border: 1px solid #5A7EC7;
+        border-radius: 10px;
+    }
+    
+    .input::placeholder {
+        color: #DDDDDD;
+    }
+    
+    
+    /* Estilos para la tabla */
+    .miTabla {
+        width: 90%;
+        margin: 0 5%;
+        text-align: left;
+    }
+      
+      /* Estilos para las celdas de la tabla */
+    .miTabla tbody td {
+        background-color: rgba(255, 255, 255, 0);
+        transition: all 0.2s linear;
+        transition-delay: 0.3s, 0s;
+        opacity: 0.6;
+    }
+      
+    .miTabla tbody tr:hover td {
+        background-color: rgba(255, 255, 255, 1);
+        transition-delay: 0s, 0s;
+        opacity: 1;
+        font-size: 2em;
+    }
+      
+    .miTabla td {
+        transform-origin: center left;
+        transition-property: transform;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+    }
+      
+    .miTabla tr:hover td {
+        transform: scale(1.1);
+    }
+      
+    align-items: center;
+    margin: 30px; 
+}
+  
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+}
+
+.input {
+	font-size: 23px;
+	padding: 5px 10px;
+	width: 100%;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+.input:focus {
+	background: #F2F2F2;
+	border: 1px solid #5A7EC7;
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #DDDDDD;
+}
+
